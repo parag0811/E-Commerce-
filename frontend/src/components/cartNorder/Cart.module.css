@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.cartContainer {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  /* background-color: #F5F7F9; */
+  border-radius: 12px;
+  font-family: "Lato";
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.cartList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+}
+
+.productImage {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.productTitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.details p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.deleteBtn {
+  margin-top: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #286184;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 80px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #97a5ad;
+}
+
+.message {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.cartFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ✅ Aligns items vertically center */
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.total {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.checkoutBtn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.checkoutBtn:hover {
+  background-color: #388e3c;
+}
+
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .productImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .details {
+    align-items: center;
+    text-align: center;
+  }
+
+  .deleteBtn {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .cartFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .checkoutBtn {
+    width: 100%;
+    max-width: 200px;
+  }
+}

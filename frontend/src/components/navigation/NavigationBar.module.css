@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.mainHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(30, 28, 28, 0.3);
+}
+
+.white {
+  background-color: rgb(255, 255, 255);
+}
+
+.white .navLink {
+  color: black;
+  font-weight: 500;
+}
+
+.white .navIconProfile {
+  color: black;
+  filter: brightness(0) saturate(100%) invert(0);
+}
+
+.white .navIcon > img {
+  filter: brightness(0) saturate(100%) invert(0);
+}
+
+.white .logo img {
+  filter: brightness(0) saturate(100%) invert(0);
+}
+
+.productsNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  right: 0;
+  z-index: 1000;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.mainHeader > nav,
+.productsNav > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0px 100px;
+}
+
+.leftNav,
+.rightNav {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftNavLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  height: 100%;
+  font-family: "Lato";
+  color: white;
+  font-weight: bold;
+}
+
+/* NavigationBar.module.css */
+
+.productsNav .navLink.active {
+  color: rgb(153, 207, 207);
+  font-weight: 700;
+}
+
+/* Updated profile styling */
+.navIconProfile {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  font-size: 16px;
+  font-family: "Lato";
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.logo img {
+  object-fit: contain;
+  display: block;
+}
+
+.navIcon > img {
+  height: 22px;
+  width: 22px;
+  object-fit: contain;
+  display: block;
+}
+
+.productsNav .navLink {
+  color: black;
+  font-weight: 500;
+}
+
+.productsNav .logo {
+  filter: brightness(0) saturate(100%) invert(0);
+}
+
+.productsNav .navIconProfile {
+  filter: brightness(0) saturate(100%) invert(0);
+}
+
+.productsNav .navIcon > img {
+  filter: brightness(0) saturate(100%) invert(0);
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger img {
+  height: 26px;
+  padding-right: 20px;
+  padding-top: 4px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 850px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 850px) {
+  .mainHeader > nav,
+  .productsNav > nav {
+    padding: 0px 20px;
+  }
+
+  .leftNavLinks {
+    display: none; /* Hide Men, Women, Unisex */
+  }
+
+  .navLink {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+
+  .navIcon > img,
+  .navIconProfile > img {
+    height: 18px;
+    width: auto;
+  }
+
+  .navIconProfile {
+    font-size: 14px;
+  }
+
+  .productsNav .navLink {
+    font-size: 14px;
+  }
+
+  .leftNav {
+    gap: 10px;
+  }
+
+  .rightNav {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .navIcon {
+    display: none; /* Hides cart icon */
+  }
+
+  .productsLink {
+    display: none; /* Hides 'Products' nav link */
+  }
+}

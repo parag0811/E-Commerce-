@@ -1,0 +1,35 @@
+.rootContainer {
+  position: relative;
+  overflow-x: hidden;
+
+}
+
+/* Background image layer */
+.background {
+  background-image: url("../assets/backgroundImg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  will-change: transform;
+}
+
+@media (max-width: 830px) {
+  .background {
+    background-image: url("../assets/bgResponsive.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-color: #ffffff;
+  }
+}
+
+/* Foreground content */
+.contentWrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}

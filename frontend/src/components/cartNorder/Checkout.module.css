@@ -1,0 +1,125 @@
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #d1d5db;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card p {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.card span {
+  font-weight: 600;
+  color: #111827;
+}
+
+.itemTotal {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.total {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  text-align: center;
+  color: #111827;
+}
+
+.amount {
+  color: #16a34a;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  min-width: 140px;
+  font-weight: 600;
+  color: white;
+}
+
+.goBack {
+  background-color: #6b7280;
+}
+
+.goBack:hover {
+  background-color: #4b5563;
+  transform: scale(1.03);
+}
+
+.orderNow {
+  background-color: #2563eb;
+}
+
+.orderNow:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.03);
+}
+
+.error {
+  color: #dc2626;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  .total {
+    font-size: 1.25rem;
+  }
+}

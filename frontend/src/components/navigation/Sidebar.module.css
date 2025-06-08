@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.sidebarTrans {
+  position: fixed;
+  top: 90px;
+  right: 0;
+  height: calc(100vh - 90px);
+  width: 250px;
+  z-index: 10;
+  background-color: rgba(30, 28, 28, 0.3);
+  color: white;
+  transition: width 0.3s ease;
+}
+
+.sidebarWhite {
+  position: fixed;
+  top: 90px;
+  right: 0;
+  height: calc(100vh - 90px);
+  width: 260px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255);
+  color: black;
+  transition: width 0.3s ease;
+}
+
+.sideBarData {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato";
+}
+
+.eachSubBar {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
+  padding: 40px;
+}
+
+.eachSubBar:hover {
+  background-color: rgba(30, 28, 28, 0.4);
+  cursor: pointer;
+}
+
+.eachSubBar > img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.sidebarWhite .eachSubBar > img {
+  filter: brightness(0) saturate(100%);
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.eachSubBar > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sidebarWhite .eachSubBar > a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.eachSubBarButton {
+  background: none;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (max-width: 850px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .eachSubBar {
+    padding: 30px 20px;
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  .eachSubBar > img {
+    height: 18px;
+    width: 18px;
+  }
+
+  .eachSubBar > a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 851px) {
+  .sidebar {
+    width: 300px;
+  }
+
+  .eachSubBar {
+    padding: 40px 25px;
+    font-size: 18px;
+    gap: 35px;
+  }
+
+  .eachSubBar > img {
+    height: 22px;
+    width: 22px;
+  }
+
+  .eachSubBar > a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .sidebarTrans,
+  .sidebarWhite {
+    width: 40vw;
+    top: 90px;
+  }
+
+  .eachSubBar {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .eachSubBar > a,
+  .eachSubBar > button {
+    font-size: 14px;
+  }
+
+  .eachSubBar > img {
+    height: 18px;
+    width: 18px;
+  }
+}

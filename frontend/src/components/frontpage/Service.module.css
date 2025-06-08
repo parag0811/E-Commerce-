@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  height: 40vh;
+  width: 100%;
+}
+
+.service1,
+.service2,
+.service3,
+.service4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: calc(20% - 20px);
+  font-family: "Lato";
+  text-align: center;
+}
+
+.service1 > img,
+.service2 > img,
+.service3 > img,
+.service4 > img {
+  height: 50px;
+}
+
+.service1 > div:nth-child(2),
+.service2 > div:nth-child(2),
+.service3 > div:nth-child(2),
+.service4 > div:nth-child(2) {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.service1 > div:nth-child(3),
+.service2 > div:nth-child(3),
+.service3 > div:nth-child(3),
+.service4 > div:nth-child(3) {
+  font-size: 16px;
+  width: 90%;
+  color: #4b5259;
+}
+
+/* End Section */
+
+.containMore {
+  height: 40vh;
+  padding-top: 100px;
+  background-color: white;
+}
+
+.more {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: start;
+  font-family: "Lato";
+  width: 80%;
+  margin: 0px auto;
+  height: 80%;
+}
+
+.promo img,
+.men > h3,
+.women > h3,
+.subscribe > h2 {
+  align-self: flex-start; /* Ensures all first children align to the top */
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+}
+
+.men,
+.women {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.men > h3,
+.women > h3 {
+  font-size: 25px;
+}
+
+.men > p,
+.women > p {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.men > p > a,
+.women > p > a {
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.subscribeForm input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.subscribeForm button {
+  background-color: #1771d0f8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Lato";
+}
+
+.subscribeForm button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+  /* Ensure services section is centered and wraps in smaller screens */
+  .services {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px;
+    justify-content: center; /* Center the services */
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    width: 45%;
+    margin-bottom: 30px;
+    align-items: center; /* Center the content in service boxes */
+    text-align: center; /* Center text */
+  }
+
+  /* Adjust the .containMore section to center content */
+  .containMore {
+    height: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    text-align: center;
+  }
+
+  .more {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+
+  /* Make promo and other sections align centrally */
+  .promo,
+  .men,
+  .women,
+  .subscribe {
+    width: 100%;
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text */
+  }
+
+  /* Adjust gap for promo section */
+  .promo {
+    gap: 30px;
+  }
+
+  .promo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; /* Adjust width as needed */
+    max-width: 500px; /* Max width for the image */
+  }
+
+  /* Adjust subscribeForm items to center */
+  .subscribeForm {
+    align-items: center;
+    width: 100%; /* Full width */
+  }
+
+  .subscribeForm input {
+    width: 100%; /* Full width */
+  }
+
+  .subscribeForm button {
+    width: 200px; /* Full width */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Full-width adjustment for .men and .women */
+  .men,
+  .women {
+    width: 100%; /* Full width on mobile */
+    text-align: center; /* Center text */
+  }
+
+  .men > h3,
+  .women > h3 {
+    font-size: 20px;
+    text-align: center; /* Center text */
+  }
+
+  .men > p,
+  .women > p {
+    text-align: center; /* Center paragraph text */
+  }
+
+  .subscribeForm {
+    width: 100%; /* Full width form */
+  }
+
+  .subscribeForm input,
+  .subscribeForm button {
+    width: 100%; /* Full width input and button */
+  }
+
+  /* Center the promo image */
+  .promo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; /* Adjust width as needed */
+  }
+
+  .subscribeForm button {
+    width: 200px; /* Full width */
+  }
+}

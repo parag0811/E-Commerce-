@@ -48,13 +48,10 @@ cd e-commerce
 
 Inside the backend/ folder, create a .env file:
 
-env
-Copy
-Edit
+env file 
 PORT=5000
 MONGO_URL=your_mongo_connection_string
 jwToken=your_jwt_secret_key
-
 BUCKET_NAME=your_aws_bucket_name
 BUCKET_REGION=your_aws_bucket_region
 ACCESS_KEY=your_aws_access_key
